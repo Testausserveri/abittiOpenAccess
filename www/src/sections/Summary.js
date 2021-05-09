@@ -8,7 +8,7 @@ export default function Summary() {
         <div>
             <h2>Yhteenveto</h2>
             <p>
-                Haluamme kiittää ylioppilastutkintolautakuntaa hyvin asiallisesta tietoturvailmoituksen käsittelystä ja ripeästä toiminnasta. He ovat hoitaneet tapauksen mallikkaasti sisäisesti ja ulkoisesti. Etenkin hyvänä yksityiskohtana haluamme tuoda esiin huolellisesti suunnitellun julkaisuaikataulun tekemist korjausta varten, jossa otettiin huomioon erilaisia vaihtoehtoja huomioimalla niiden uhat ja edut.
+                Haluamme kiittää ylioppilastutkintolautakuntaa hyvin asiallisesta tietoturvailmoituksen käsittelystä ja ripeästä toiminnasta. He ovat hoitaneet tapauksen mallikkaasti sisäisesti ja ulkoisesti. Etenkin hyvänä yksityiskohtana haluamme tuoda esiin huolellisesti suunnitellun julkaisuaikataulun tekemistä korjausta varten, jossa otettiin huomioon erilaisia vaihtoehtoja huomioimalla niiden uhat ja edut.
             </p>
 
             <h3>Haavoittuvuuden lähdekoodi</h3>

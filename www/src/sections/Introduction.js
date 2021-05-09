@@ -25,7 +25,7 @@ export default function Introduction() {
                 </li>
             </ul>
             <p>
-                Näihin kaikkiin oli saatavilla täysi pääsy täysillä pääkäyttäjän oikeuksilla langattoman verkon ylitse. Mahdollinen tietovuoto olisi voinut olla hyvin vakava ja sisältää suuria määriä kokelaiden arkaluontoistakin dataa. Puhumattakaan vilpin ja koetilanteen häiriköinnin mahdollisuudesta.
+                Mahdollinen tietovuoto olisi voinut olla hyvin vakava ja sisältää suuria määriä kokelaiden arkaluontoistakin dataa. Puhumattakaan vilpin ja koetilanteen häiriköinnin mahdollisuudesta.
             </p>
             <p>
                 Tämä kaikki löydettiin noin kolmen kuukauden tiimityön ja lukuisten Abitin lähdekoodin parissa vietettyjen tuntien ansiosta. Nyt kuitenkin pääsemme jakamaan työmme tuloksia ja olemme tästä yhtä innoissamme kuin tekin :)
