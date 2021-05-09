@@ -115,9 +115,7 @@ Location: http://127.0.0.1:8021/start-answer-downloader/%22%22%20%26%20mkdir.."
             </p>
 
             <TimeHeading data={{
-                title: "Päivityspaketin väärentäminen",
-                time: "+",
-                description: "Kokelaiden laitteisiin murtautuminen"
+                title: "Kokelaiden laitteisiin murtautuminen"
             }}/>
             <p>
                 Koetilan palvelimessa on kokelaiden laitteille tarkoitettu automaattinen päivitysmekanismi, joka lähettää päivityspaketin kokelaiden laitteille niiden liittyessä kokeeseen. Kaappaamalla koetilan palvelimen, voimme luoda oman päivityspaketin, joka antaa meille yksinkertaisesti tavan suorittaa koodia kokelaiden laitteilla pääkäyttäjän oikeuksilla.
