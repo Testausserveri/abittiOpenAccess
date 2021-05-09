@@ -135,7 +135,8 @@ h2 {
     font-size: 1.1rem;
     cursor: pointer;
     border-radius: 10px;
-
+    display: block;
+    text-decoration: none;
     position: relative;
     top: 0;
     transition: top ease 0.3s, background-color ease 0.3s;
