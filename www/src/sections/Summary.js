@@ -31,7 +31,7 @@ export default function Summary() {
             <LinkBlock data={{
                 icon: YTLIcon,
                 url: "https://www.abitti.fi/blogi/2021/05/abitista-on-korjattu-kaksi-tietoturvahaavoittuvuutta/",
-                siteName: "Abitti",
+                siteName: "Abitti.fi",
                 title: "Abitista on korjattu kaksi tietoturvahaavoittuvuutta",
                 date: "6.5.2021"
             }}/>
