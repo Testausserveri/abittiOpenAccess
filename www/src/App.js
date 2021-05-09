@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="App">
             <article className="center">
-                <h1>Abitti OpenAccess</h1>
+                <h1>Abitti Open Access</h1>
                 <Section name="Introduction" />
                 <hr />
                 <Section name="Demo" />
