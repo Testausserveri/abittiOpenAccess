@@ -8,7 +8,7 @@
     z-index: -10;
 }
 
-@media only screen and (max-width: 2200px) {
+@media only screen and (min-width: 2200px) {
     canvas {
       transform: scale(1.5);
     }
