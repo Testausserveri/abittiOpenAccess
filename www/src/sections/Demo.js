@@ -35,8 +35,9 @@ Location: http://127.0.0.1:8021/start-answer-downloader/%22%22%20%26%20mkdir.."
                 language="text"
                 showLineNumbers={false}
                 theme={dracula}
-                customStyle={{borderRadius: "10px"}}
-            />;
+                customStyle={{borderRadius: "10px", display: "block", "overflow-y": "hidden"}}
+                codeContainerStyle={{display: "block"}}
+            />
             <br />
 
             <TimeHeading data={{
@@ -69,7 +70,8 @@ Location: http://127.0.0.1:8021/start-answer-downloader/%22%22%20%26%20mkdir.."
                 showLineNumbers={false}
                 theme={dracula}
                 highlight="6-9"
-                customStyle={{borderRadius: "10px"}}
+                customStyle={{borderRadius: "10px", display: "block", "overflow-y": "hidden"}}
+                codeContainerStyle={{display: "block"}}
             />;
             <p>
                 Polun “/start-answer-downloader/:answersFilename”-metodin alkuperäinen tarkoitus on toimia tapana kokeen järjestäjälle ladata kokeen vastauksia USB-tikulle tai johonkin muuhun järjestelmän sijaintiin. Tämän takia videolla hyökkäyksen tässä vaiheessa ilmestyy “valitse sijanti”-ikkuna. Tämä ikkuna olisi kuitenkin todella helppoa piilottaa.
