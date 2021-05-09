@@ -19,7 +19,7 @@ export default function Summary() {
                 icon: GitHubIcon,
                 url: "https://github.com/Testausserveri/abittiOpenAccess",
                 siteName: "GitHub",
-                title: "Testausserveri/abittiOpenAccess"
+                title: "Testausserveri/\nabittiOpenAccess"
             }}/>
             <p>
                 Haavoittuvuuden vaiheita voit kokeilla viimeisimmällä toimivalla kokelaan tikun versiolla ABITTI2106S (tai vanhemmat, 1.10.2019 asti) ja palvelimen tikun versiolla SERVER21066 (tai vanhemmat, 1.10.2019 asti). Tämä haavoittuvuus on korjattu viime päivityksissä, joten sen testaaminen oikeissa koetilanteessa on turhaa ja voi pahimmillaan johtaa jopa kahden vuoden vankeustuomioon (ks. RL 38:7 a § ja 8 §).

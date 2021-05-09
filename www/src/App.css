@@ -26,6 +26,12 @@ canvas:focus {
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 910px) {
+    .center {
+        padding: 1rem;
+    }
+  }
+
 h1 {
     font-family: "Poppins",sans-serif;
     font-weight: 800;
@@ -148,6 +154,10 @@ h2 {
 .linkBlock span {
     display: block;
     opacity: 0.8;
+    white-space: pre-line;
+}
+.linkBlock span:nth-child(1):not(.date) {
+    margin-right: 0.5rem;
 }
 .linkBlock img {
     vertical-align: middle;
@@ -158,5 +168,18 @@ h2 {
 .linkBlock .date {
     display: inline-block;
     opacity: 0.5;
-    margin-left: 0.5rem;
+}
+
+.linkBlock span:nth-child(1):not(.date)::after {
+    content: ' ';
+    background-image: url('./images/tab.svg');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: 100% 100%;
+    opacity: 0.9;
+    position: relative;
+    top: 2px;
+    margin-left: 0.5em;
+    filter: invert(1);
 }
