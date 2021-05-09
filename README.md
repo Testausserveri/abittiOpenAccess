@@ -1,5 +1,8 @@
-# Abitti Open Access
-Abitti Open Access (exploit)  - AntiBitti projekti
+# Abitti OpenAccess
+A severe security vulnerability found in the Abitti exam system.
 
-## Code
-Check `nsashell` folder for exploit code
+Folder `nsashell` includes the exploit code. The last working non-patched Abitti versions are ABITTI2106S and SERVER21066. See our blog article for more details.
+
+---
+
+<small>The AntiBitti project, Testausserveri</small>
