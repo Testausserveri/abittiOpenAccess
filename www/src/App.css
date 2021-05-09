@@ -74,6 +74,7 @@ h2 {
     z-index: 1;
     width: 100%;
     margin-bottom: 3rem;
+    position: relative;
 
 }
 .youtubeEmbed::before {
@@ -82,7 +83,7 @@ h2 {
     margin-left: -1px;
     float: left;
     height: 0;
-    padding-top: calc(1.7777 * 100%);
+    padding-top: calc(0.56 * 100%);
 }
 .youtubeEmbed::after { /* to clear float */
     content: "";
@@ -92,6 +93,9 @@ h2 {
 
 .youtubeEmbed iframe {
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
 }
 
