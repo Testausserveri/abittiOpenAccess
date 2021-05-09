@@ -200,3 +200,32 @@ h2 {
     margin: 0 auto;
     display: block;
 }
+
+.authors {
+    display: flex;
+}
+
+.avatars {
+    margin-left: calc(1rem - 5px);
+    margin-right: 1rem;
+}
+
+.avatars img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 5px solid #191919;
+    position: relative;
+    margin-left: -1rem;
+}
+
+.authors .text {
+    flex: 1;
+    font-family: 'Work Sans', sans-serif;
+    color: #aaa;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
