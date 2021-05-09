@@ -111,9 +111,13 @@ h2 {
     font-size: 1.3rem;
     color: #aaa;
     margin: 0; padding: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     line-height: 2;
-    margin-top: 3rem;
+    margin-top: 2rem;
+}
+.timeHeading {
+    display: inline-block;
+    border-bottom: 1px solid #333;
 }
 .timeHeading h3 { 
     font-size: 1.3rem;
@@ -154,7 +158,6 @@ h2 {
 .linkBlock span {
     display: block;
     opacity: 0.8;
-    white-space: pre-line;
 }
 .linkBlock span:nth-child(1):not(.date) {
     margin-right: 0.5rem;
