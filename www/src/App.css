@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&family=Poppins:wght@600;800&display=swap');
+
+#art {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+
+}
+
+canvas:focus {
+    outline: none;
+}
+
+.App {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.center {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    background: #3c709d;
+    background: linear-gradient(
+        51deg
+        ,#3c709d,#22416c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    -webkit-flex: 1 1;
+    margin-bottom: 2rem;
+}
+
+p, ul:not(ul li ul), ol {
+    font-family: 'Work Sans', sans-serif;
+    color: #aaa;
+    line-height: 2;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #333;
+    margin: 4rem auto;
+    width: 50%;
+}
+
+h2 {
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #aaa;
+    margin: 0; padding: 0;
+    margin-bottom: 2rem;
+
+}
+
+.youtubeEmbed {
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 3rem;
+
+}
+.youtubeEmbed iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.timeHeading, h3 {
+    font-family: "Poppins",sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #aaa;
+    margin: 0; padding: 0;
+    margin-bottom: 2rem;
+    line-height: 2;
+    margin-top: 3rem;
+}
+.timeHeading h3 { 
+    font-size: 1.3rem;
+    display: block;
+    margin: 0; padding: 0;
+}
+
+.timeHeading .time {
+    padding: 0.2rem;
+    background-color: rgba(40, 42, 54, 1);
+    border-radius: 3px;
+}
+
+.timeHeading span {
+    font-weight: normal;
+}
+
+.linkBlock {
+    background-color: rgb(40, 42, 54);
+    color: rgb(248, 248, 242);
+    width: calc(100% - 4rem);
+    padding: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 10px;
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s, background-color ease 0.3s;
+}
+.linkBlock:hover {
+    top: -3px;
+    background-color: #242530;
+}
+.linkBlock span {
+    display: block;
+    opacity: 0.8;
+}
+.linkBlock img {
+    vertical-align: middle;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+.linkBlock .date {
+    display: inline-block;
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
