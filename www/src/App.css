@@ -229,3 +229,12 @@ h2 {
     justify-content: space-between;
     margin-bottom: 5px;
 }
+
+a.inlineLink {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+}
+a.inlineLink:hover {
+    color: #fff;
+}

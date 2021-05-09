@@ -36,7 +36,7 @@ function App() {
                     date="9. toukokuuta 2021" />
                     <br />
                     <p>
-                        2021 &copy; Testausserveri
+                        2021 &copy; <a className="inlineLink" href="https://testausserveri.fi">Testausserveri</a>
                     </p>
                 </div>
             </article>
