@@ -33,7 +33,7 @@ function App() {
                             avatar: MikaelAvatar
                         }
                     ]}
-                    date="9. toukokuuta 2021" />
+                    date="10. toukokuuta 2021" />
                     <br />
                     <p>
                         2021 &copy; <a className="inlineLink" href="https://testausserveri.fi">Testausserveri</a>
