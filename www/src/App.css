@@ -181,7 +181,7 @@ h2 {
     opacity: 0.5;
 }
 
-.linkBlock span:nth-child(1):not(.date)::after {
+.linkBlock span:nth-child(2):not(.date)::after {
     content: ' ';
     background-image: url('./images/tab.svg');
     width: 16px;
