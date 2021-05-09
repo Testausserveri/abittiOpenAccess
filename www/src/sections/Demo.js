@@ -3,6 +3,9 @@ import { TimeHeading } from '../components/TimeHeading';
 
 import { CodeBlock, dracula } from "react-code-blocks";
 
+import koeLogPicture from '../images/koe-loki.png';
+import fsTestPicture from '../images/fs-test.png';
+
 export default function Demo() {
     return (
         <div>
@@ -41,7 +44,7 @@ Location: http://127.0.0.1:8021/start-answer-downloader/%22%22%20%26%20mkdir.."
             <br />
 
             <TimeHeading data={{
-                title: "Command Injection",
+                title: "Command Injection & Privilege Escalation",
                 time: "0:28 - 0:29",
                 description: "Palomuurin ohitus ja etäyhteyden avaaminen"
             }}/>
@@ -110,6 +113,49 @@ Location: http://127.0.0.1:8021/start-answer-downloader/%22%22%20%26%20mkdir.."
             <p>
                 Pääkäyttäjän oikeudet kuitenkin mahdollistavat paljon vakavampia kokeen valvonnalta piilossa olevia toimia. Se mahdollistaa kaikenlaisen koetilanteen häirinnän, tallenteiden lukemisen, muokkaamisen ja poistamisen. Pääkäyttäjän oikeudet koetilan palvelimella antavat myös paljon mahdollisuuksia muiden sen verkossa olevien Abitti-koneiden kaappaamiseksi, joka vaarantaa myös kokelaiden henkilökohtaisten tietojen turvallisuuden heidän koneillaan, vaikka Abitissa koneiden tallennustila ei olisi kokelaille tavallisesti näkyvissä, sillä pääkäyttäjänä voimme päästä levyihin käsiksi vapaasti.
             </p>
+
+            <TimeHeading data={{
+                title: "Päivityspaketin väärentäminen",
+                time: "+",
+                description: "Kokelaiden laitteisiin murtautuminen"
+            }}/>
+            <p>
+                Koetilan palvelimessa on kokelaiden laitteille tarkoitettu automaattinen päivitysmekanismi, joka lähettää päivityspaketin kokelaiden laitteille niiden liittyessä kokeeseen. Kaappaamalla koetilan palvelimen, voimme luoda oman päivityspaketin, joka antaa meille yksinkertaisesti tavan suorittaa koodia kokelaiden laitteilla pääkäyttäjän oikeuksilla.
+            </p>
+            <p>
+                Polkuun /var/lib/ktpjs/public/koe-update/ tehdään zip-arkisto nimellä “koe-update.zip”, joka sisältää skriptitiedoston “koe-update.sh”. Kokelaan laite suorittaa tämän skriptin avattuaan päivityspaketin.
+            </p>
+            <p>
+                Esimerkki mahdollisesta hyökkäyksessä käytettävästä skriptistä:
+            </p>
+            <CodeBlock
+                text={`#!/bin/bash
+
+touch /test_write_to_root
+
+cat "YOU HAVE BEEN PWNED!" >> /home/digabi/pwned.txt
+
+export DISPLAY=:0
+
+sudo -u digabi notify-send "ABITTI HAS BEEN PWNED!"
+`}
+                language={(process.env.NODE_ENV === 'development' ? 'text' : 'shell')}
+                showLineNumbers={false}
+                theme={dracula}
+                customStyle={{borderRadius: "10px", display: "block", "overflow-y": "hidden"}}
+                codeContainerStyle={{display: "block"}}
+            />;
+            <p>
+                Esimerkkiskripti luo tiedostojärjestelmän juureen tiedoston, jonka luomiseen on normaalisti oikeus vain pääkäyttäjällä. Se myös lähettää työpöytäilmoituksen koetilapalvelimen ruudulle.
+            </p>
+            <p>
+                Avaamalla kokelaan “digabi-koe” Systemd-palvelun lokin, voi huomata päivityspaketin sisältäneen koodin tulleen suoritetuksi pääkäyttäjänä:
+            </p>
+            <img src={koeLogPicture} alt="Kuvankaappaus lokitiedosto" className="picture" />
+            <p>
+                Tässä vielä skriptin luoma tiedosto tiedostojärjestelmän juuressa:
+            </p>
+            <img src={fsTestPicture} alt="Kuvankaappaus tiedostojärjestelmästä" className="picture" />
         </div>
     );
 }

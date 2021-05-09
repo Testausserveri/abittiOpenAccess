@@ -194,3 +194,9 @@ h2 {
     margin-left: 0.5em;
     filter: invert(1);
 }
+
+.picture {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
