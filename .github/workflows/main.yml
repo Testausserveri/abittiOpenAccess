@@ -1,0 +1,24 @@
+name: React app deployement
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: |
+          npm i
+          npm ci
+          npm run build
+          echo "abittiopenaccess-staging.testausserveri.fi" >> build/CNAME
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git --work-tree build add --all
+          git commit -m "Automatic React build & deploy"
+          git push origin HEAD:gh-pages --force
