@@ -8,6 +8,12 @@
     z-index: -10;
 }
 
+@media only screen and (max-width: 2200px) {
+    canvas {
+      transform: scale(1.5);
+    }
+}
+
 canvas:focus {
     outline: none;
     z-index: -10;
