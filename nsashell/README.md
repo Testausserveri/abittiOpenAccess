@@ -3,6 +3,6 @@ Please note that this code was only used to demonstrate the attack and will prob
 
 `nsamock.js` - Fake NSA Server
 
-`nclient.js` - Backdoor client (aka. backdoor's custom SSH)
+`nclient.js` - Backdoor client (aka. backdoor's RCE server's client)
 
 `koe-update.zip` - Update payload to plant in exam server. This payload will run bash script as root on every student's computer.
