@@ -1,4 +1,5 @@
 Exploit code.
+Please note that this code was only used to demonstrate the attack and will probably contain bugs.
 
 `nsamock.js` - Fake NSA Server
 
